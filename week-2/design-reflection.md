@@ -1,0 +1,1 @@
+![site map](/week-2/imgs/site-map.jpg "Sibel's Site Map")
