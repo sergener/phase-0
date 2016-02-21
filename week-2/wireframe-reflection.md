@@ -1,6 +1,6 @@
 ![wireframe for index](/week-2/imgs/wireframe-index.png "Index wireframe")
 
-![wireframe for blog](/week-2/imgs/wireframe-blog.png "Blog wireframe")
+![wireframe for blog](/week-2/imgs/wireframe-blog-index.png "Blog wireframe")
 
 A wireframe is a visual setup of a website that puts each element in place. It's essentially a blueprint of what a website will looklike, and allows a designer to get an idea of the layout of a page, how the user will interact with the interface, and what elements can be included on a page. It's essential to the design process because it provides a sense of what elements will go where; the HTML framework that comes next would be much more difficult without an idea of what needs to be included in what order. It's also beneficial as the sketch for CSS so designers will make less initial mistakes.
 
