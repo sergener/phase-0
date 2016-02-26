@@ -1,0 +1,55 @@
+* {
+  color: #000080; 
+}
+.company-links {
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+a {
+  color: #800080;
+}
+a:visited {
+  color: #ff0000;
+}
+html {
+  background-color: #ffffff;
+}
+li span {
+  color: normal;
+  font-size: .5em;
+}
+.contact-information {
+  font-weight: bold;
+  text-align: center;
+}
+h1{
+  font-size: 1.5em;
+}
+h1 span{
+  font-size: 2em;
+}
+#address {
+  font-size:1em;
+}
+h3 span {
+  display: block;
+}
+#name {
+  font-size: 1.2em;
+}
+
+.geico-ad {
+  text-align: center;
+  font-size: 0.75em;
+}
+.geico-ad span {
+  display: block;
+}
+
+.horizontal-line {
+  border-top: 1px solid gray;
+}
+
+.comments {
+  font-size: 0.75em;
+}
