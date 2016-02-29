@@ -53,3 +53,28 @@ h3 span {
 .comments {
   font-size: 0.75em;
 }
+
+/* What is important to know when linking an external file (like a stylesheet) to an HTML file?
+It's important to have the stylesheet . It's also important to have the correct path to the
+stylesheet. In this challenge this wasn't a problem, but if the stylesheet and the HTML files are
+in different folders it's necessary to make sure they link correctly.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+We used a few different kinds of CSS. For the header we used text-align: center;. We had to look up how
+to get the columns for the links to work, but otherwise we found most of the positioning to be
+straightforward.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+We modified the font-size on most of the text, as well as the color and font-weight in the headers and footers
+especially. 
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why?
+If you didn't, how would you know which one to add to your HTML?
+We added several classes to the HTML to help us more easily modify different sections 
+
+When you compared your site to the actual code base, which do you think had cleaner code that
+followed best practices and why?
+Our code used much less formatting in HTML; in some ways it was easy to tell ours was a much
+more recent version because of our use of HTML5 tags and CSS, which are the best current practices.
+
+*/
