@@ -1,12 +1,12 @@
-![1](../imgs/3.4.1.png)
-![2](../imgs/3.4.2.png)
-![3](../imgs/3.4.3.png)
-![4](../imgs/3.4.4.png)
-![5](../imgs/3.4.5.png)
-![6](../imgs/3.4.6.png)
-![7](../imgs/3.4.7.png)
-![8](../imgs/3.4.8.png)
-![9](../imgs/3.4.9.png)
+![1](imgs/3.4.1.png)
+![2](imgs/3.4.2.png)
+![3](imgs/3.4.3.png)
+![4](imgs/3.4.4.png)
+![5](imgs/3.4.5.png)
+![6](imgs/3.4.6.png)
+![7](imgs/3.4.7.png)
+![8](imgs/3.4.8.png)
+![9](imgs/3.4.9.png)
 
 
 -	How can you use Chrome's DevTools inspector to help you format or position elements?
