@@ -13,7 +13,7 @@
 #Your Solution Below
 def shortest_string(list_of_words)
 	if list_of_words.empty?
-		return nil
+		p nil
 	end
 	
 	shortest_word = list_of_words[0]
@@ -24,5 +24,5 @@ def shortest_string(list_of_words)
 		end
 	end
 
-	return shortest_word
+	p shortest_word
 end
