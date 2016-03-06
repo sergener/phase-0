@@ -12,5 +12,20 @@
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
+	if list_of_nums.empty?
+		p nil
+	end
+
+	i = list_of_nums[0]
+	list_of_nums.each do |num|
+		if num < i
+			i = num
+		end
+	end
+	p i
+end
+
+# Using methods
+def smallest_integer(list_of_nums)
   p list_of_nums.min
 end

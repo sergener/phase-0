@@ -63,7 +63,7 @@ def sentence_maker(sentence)
 # 5. sentence_maker initial solution
 
 def sentence_maker(array)
-	sentence = array[0].capitalize
+	sentence = array[0].capitalize.to_s
 	i = 1
 	while i < array.length
 		sentence = sentence + " " + array[i].to_s
@@ -75,10 +75,10 @@ def sentence_maker(array)
 end
 
 # 6. sentence_maker refactored solution
-=begin def sentence_maker(array)
+begin def sentence_maker(array)
 	string=array.join (" ")
 	string.capitalize!
 	string << "."
 end
-=end
+end
 

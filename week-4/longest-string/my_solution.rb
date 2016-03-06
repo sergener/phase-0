@@ -19,12 +19,10 @@ def longest_string(list_of_words)
 
   longest_word = list_of_words[0]
 
-  longest_word.each do |word|
+  list_of_words.each do |word|
   	if word.length > longest_word.length
-  	longest_word = word
+  		longest_word = word
   	end
   end
-
 p longest_word
-
 end
