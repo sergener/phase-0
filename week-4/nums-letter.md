@@ -10,6 +10,7 @@ Float division will return results in floats while integer division will return 
 
 ##How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 
+Ruby is programmed to easily handle basic math. Addition is completed with a + between integers or floats, subtraction with -, multiplication with *, and division with /. It will return integers or floats based on what the original numbers are.
 
 ##What are strings? Why and when would you use them?
 
