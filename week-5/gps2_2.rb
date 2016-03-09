@@ -33,14 +33,14 @@
 
 $shopping_list = Hash.new {|hash, key| hash[key] = 1 }
 
-def create_list(list)
- list_array = list.split(" ")
+def create_list(list = "")
+ list_array = list.split
  list_array.each {|item| $shopping_list[item]}
  print_list
 end
 
 def add_item(item, quantity)
- $shopping_list[item] = quantity
+  add_or_update(item, quantity)
 end
 
 def remove_item(item)
@@ -48,11 +48,37 @@ def remove_item(item)
 end
 
 def update_quantity(item, quantity)
- $shopping_list[item] = quantity
+ add_or_update(item, quantity)
 end
 
 def print_list
  $shopping_list.each do |key, value|
- 	puts "item: #{key} qty: #{value}"
+ 	puts "item: #{key}, qty: #{value}"
  end
 end
+
+=begin
+alternatively:
+
+$shopping_list = Hash.new {|hash, key| hash[key] = 1 }
+
+def create_list(list = "")
+ list_array = list.split
+ list_array.each {|item| $shopping_list[item]}
+ print_list
+end
+
+def add_or_update(item, quantity)
+	$shopping_list[item] = quantity
+end
+
+def remove_item(item)
+ $shopping_list.delete(item)
+end
+
+def print_list
+ $shopping_list.each do |key, value|
+ 	puts "item: #{key}, qty: #{value}"
+ end
+end
+=end
