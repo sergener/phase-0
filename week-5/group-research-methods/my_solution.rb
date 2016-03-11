@@ -33,26 +33,32 @@ return a new array with new integers
 i_want_pets = ["I", "want", 4, "pets", "but", "only", "have", 3]
 
 def my_array_modification_method!(source, thing_to_modify)
-  source.each do |i|
+  source.map! do |i|
     if i.is_a?(Integer)
     i += thing_to_modify
-  else
-    return source
+    else
+    i = i
     end
   end
 end
 
-
-my_array_modification_method![i_want_pets, 1]
+#refactored:
+#def my_array_modification_method!(source, thing_to_modify)
+#  source.map! {|i| i.is_a?(Integer) ? i + thing_to_modify :i}
+#end
 
 def my_hash_modification_method!(source, thing_to_modify)
-  
+  source.each {|key, value| source[key] = value + thing_to_modify}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+#.map! is similar to .each in that it iterates over each object in an array. However.map
+#can be used to create a new array based on the original array, but with the values modified
+#by the supplied block.
+#Also important to note is that if you don't make explicit it needs to return a value, it will
+#return "nil".
+#There's no map method for use on hashes, so I used .each and created a new hash with the value
+#modified.
 
 
 # Person 3
