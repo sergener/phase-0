@@ -17,7 +17,7 @@
 # What is the output? (i.e. What should the code return?)
 # - An array that contains the number of string that appears most frequently
 # What are the steps needed to solve the problem?
-1) Turn the initial array into a hash, in doing so we needed iterate through the array to count how many times each array object appears and assign that number to the value for the hash
+1) Turn the initial array into a hash, in doing so we need to iterate through the array to count how many times each array object appears and assign that number to the value for the hash
 2) Figure out what the highest value is in the hash
 3) Return the key with the highest value in an array  
 ​
@@ -51,17 +51,8 @@ def mode(array)
 	array.each do |x|
 	counts[x]+=1
 	end
-	new_array = []
-	counts.select do |key, value|
-		if value==counts.values.max
-		new_array << key
-  end
-	end
-	return new_array
+	 new_array = counts.select {|x,y| y==counts.values.max}.keys
+  return new_array
 end
-​
-array = ["a","b","b"]
-
-​
 ​
 # 4. Reflection
