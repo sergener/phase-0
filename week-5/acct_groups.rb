@@ -26,6 +26,8 @@ end
 p accountability_groups(skippers)
 
 =begin
+
+** NOTE: while working on this challenge I had to deal with some personal crises and didn't complete it at the level I wanted to. I'm going to come back to it this week, but for my peer reviewer: this is why it isn't totally complete.
 	
 What was the most interesting and most difficult part of this challenge?
 I think it is really easy to get too involved when planning out how to solve this challenge. MY initial idea had a lot of the listed "added complexities" and when looking at it I realized I should really start somewhere easier. 
