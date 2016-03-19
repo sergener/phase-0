@@ -71,4 +71,4 @@ I didn't use it, but I found each_index. Our initial idea was to take the even i
 What concepts or learnings were you able to solidify in this challenge?
 Overall the entire process of writing the code made more sense. I understood more quickly what was missing from the code that I needed to add, and was more quick to run the code to look for errors to correct.
   
-end
+=end
