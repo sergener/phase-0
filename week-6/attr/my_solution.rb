@@ -1,17 +1,26 @@
 #Attr Methods
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge by myself
 
-# I spent [#] hours on this challenge.
+# I spent 2 hours on this challenge.
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: A name
+# Output: A greeting with that name
 # Steps:
+#class NameData
+#attr_accessor :name
+#create method to initialize(name)
+# 	instance variable for name
+#class Greetings
+#attr_reader :person
+#create method to initialize name (name=Sibel)
+# 	@person = NameData.new (can get a new name)
+#create greeting method
+# 	puts greeting with #{person.name}
 
 class NameData
-
 attr_accessor :name
 
 	def initialize(name)
@@ -22,7 +31,7 @@ end
 
 
 class Greetings
-	attr_reader :person
+attr_reader :person
 
 	def initialize(name="Sibel")
 		@person = NameData.new(name)
