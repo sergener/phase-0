@@ -120,6 +120,37 @@ new_game.return_board
 #Reflection
 
 =begin
+  
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+  This was the first challenge we were given that had so many different parts and I think, because of that, I initially felt very overwhelmed and had difficulty breaking my thoughts down into simple, clear pseudocode. While I've gotten enormously better at pseudocoding over the past week, as I can now immediately type it out instead of having to write it out on paper to pare it down, I struggled to do it with this challenge. 
+
+  My inability to think clearly at the start of this challenge was a major problem as I worked through it. To begin with, I managed to write a decent amount of code thinking "BINGO" went vertically instead of horizontally, which of course was wrong and unusable.
+
+
+
+
+What are the benefits of using a class for this challenge?
+
+How can you access coordinates in a nested array?
+  To access coordinates in a nested array you must first access the nested array, then the coordinated. To access fish in this array:
+   array = "["cat", "dog"],["fish", "mouse"]]
+  I would first have to target the coordinate of which array fish is in and then it's coordinate in the array.
+    array[1][0] would output "fish".
+
+What methods did you use to access and modify the array?
+
+
+Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+
+
+How did you determine what should be an instance variable versus a local variable?
+  Determining instance variables was the most straightforward part of writing this code. Even if I initially wrote someting as a local variable, if I realized it was 
+
+What do you feel is most improved in your refactored solution?
+  
+end
+
+=begin
 def check_and_replace
     if @number.initial == "B"
       integer = @number.slice(0).to_i
