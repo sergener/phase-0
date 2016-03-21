@@ -1,6 +1,6 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent 6 hours on this challenge.
 
 
 # Release 0: Pseudocode
@@ -22,12 +22,13 @@
   #Replace the number with an "X"
 
 # Display a column to the console
-  #Argument should get a letter
+  #Argument should get a letter and position from bingo hash
   #Using the hash keys and values, iterate through the arrays to target the value position of each array.
-  #Create a new array of arrays with the letter and each value
+  #Create a new array of arrays with single object with the letter and each value.
 
 # Display the board to the console (prettily)
-  #p the changed board to the console.
+  #print string BINGO to console.
+  #Join each internal array with a space between them.
 
 # Initial Solution
 
@@ -126,10 +127,13 @@ How difficult was pseudocoding this challenge? What do you think of your pseudoc
 
   My inability to think clearly at the start of this challenge was a major problem as I worked through it. To begin with, I managed to write a decent amount of code thinking "BINGO" went vertically instead of horizontally, which of course was wrong and unusable.
 
-
+  I think for more difficult and complicated challenges like this it will be important to go back to writing my pseudocode on paper in the future, at least to be able to come up with good enough typed pseudocode to use, since drawing on paper and being able to cross things out/easily move things is more similar to how I think.
 
 
 What are the benefits of using a class for this challenge?
+  Being able to have all of these methods in the same class allowed me to do a lot of different things to the bingo board and have them relate. For example, it was important to be able to destructively alter the board in one method and then print the column with that change in another method, which I could do by using instance variables. 
+
+  Also important is the ability to continue altering the bingo board as the game goes on, or create an entirely new game with a new bingo board. Because all the instance variables and methods are created within the class, and all bingo games work the same, it's possible to use this method across many different games.
 
 How can you access coordinates in a nested array?
   To access coordinates in a nested array you must first access the nested array, then the coordinated. To access fish in this array:
@@ -138,129 +142,19 @@ How can you access coordinates in a nested array?
     array[1][0] would output "fish".
 
 What methods did you use to access and modify the array?
-
+  I used .join" " to modify the arrays to combine them and make them look nicer when printed to the console. The " " leaves a space between each number.
+  I also used .map! to destructively modify the array when replacing the number with the "X".
 
 Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+  .initial let me create the call number as a string but still be able to access the first part of that string, the letter, when I needed to.
 
 
 How did you determine what should be an instance variable versus a local variable?
   Determining instance variables was the most straightforward part of writing this code. Even if I initially wrote someting as a local variable, if I realized it was 
 
 What do you feel is most improved in your refactored solution?
+  I unfortunately took so much time on this challenge that I didn't have time to refactor, let alone finish debugging. I struggled a lot and was sick as well, and ultimately didn't totally finish this challenge. 
+
+  I do intend to go back to this in week 7 and fix the issues in my code and refactor. I can definitely see areas where refactoring is going to make the code less repetitive and more readable. A particularly glaring example of this is the repetition of checking columns between the methods check_and_replace and print_column. I can also probably use the bingo hash to get my letters instead of creating a totally new local variable to generate a number.
   
 end
-
-=begin
-def check_and_replace
-    if @number.initial == "B"
-      integer = @number.slice(0).to_i
-      
-      @bingo_board[0].each {|i|
-        if i == integer
-          i == "X"
-        end}
-    end
-
-    elsif @number.initial == "I"
-      integer = @number.slice(0).to_i
-      
-      @bingo_board[1].each {|i|
-        if i == integer
-          i == "X"
-        end}
-    end
-
-    @number.initial == "N"
-      integer = @number.slice(0).to_i
-      
-      @bingo_board[2].each {|i|
-        if i == integer
-          i == "X"
-        end}
-    end
-
-    @number.initial == "G"
-      integer = @number.slice(0).to_i
-      
-      @bingo_board[3].each {|i|
-        if i == integer
-          i == "X"
-        end}
-    end
-
-    @number.initial == "O"
-      integer = @number.slice(0).to_i
-      
-      @bingo_board[4].each {|i|
-        if i == integer
-          i == "X"
-        end}
-    end
-
-
-def check_and_replace
-    if @number.initial == "B"
-      integer = @number.slice(0).to_i
-
-      @bingo_board.each {|array|
-        array.each {|i|
-          if i[0] == integer
-            i == "X"
-          end}
-        }
-    end
-    
-    elsif @number.initial == "I"
-      integer = @number.slice(0).to_i
-
-      @bingo_board.each {|array|
-        array.each {|i|
-          if i[1] == integer
-            i == "X"
-          end}
-        }
-    end
-
-    elsif @number.initial == "N"
-      integer = @number.slice(0).to_i
-
-      @bingo_board.each {|array|
-        array.each {|i|
-          if i[2] == integer
-            i == "X"
-          end}
-        }
-    end
-  end
-
-    elsif @number.initial == "G"
-      integer = @number.slice(0).to_i
-
-      @bingo_board.each {|array|
-        array.each {|i|
-          if i[3] == integer
-            i == "X"
-          end}
-        }
-    end
-  end
-
-    elsif @number.initial == "O"
-      integer = @number.slice(0).to_i
-
-      @bingo_board.each {|array|
-        array.each {|i|
-          if i[4] == integer
-            i == "X"
-          end}
-        }
-    end
-  end
-
-    else puts "Too bad, #{@number} isn't on this board!"
-  end
-
-end
-end
-
-=end
