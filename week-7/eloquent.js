@@ -35,7 +35,26 @@ while (number <=100){
 
 // Complete the `minimum` exercise.
 
+var minimum = function(x, y) {
+	if (x < y) {
+		return x;
+	}
+	else {
+		return y;
+	}
+}
+
+console.log(minimum(1, 10))
 
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+
+var me = {
+	name: "Sibel",
+	age: 26,
+	foods: ["clementines", "tacos", "manti"],
+	quirk: "recently impulse purchased a Totoro onsie",
+}
+
+
