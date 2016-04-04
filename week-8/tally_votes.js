@@ -90,7 +90,7 @@ var officers = {
 // */
 // __________________________________________
 // Initial Solution
-
+/*
 function election(votes) {
   for(var student in votes) { //counter to interate through each initial key
     var votesCast = votes[student];
@@ -109,8 +109,8 @@ function election(votes) {
 }
 election(votes);        
 
-/* Once the votes have been tallied, assign each officer position the name of the
-student who received the most votes. */
+ Once the votes have been tallied, assign each officer position the name of the
+student who received the most votes.
 
 function finalSlate(voteCount) {
   for(var office in voteCount) {//targets office position in voteCount variable
@@ -129,10 +129,46 @@ function finalSlate(voteCount) {
 }
 finalSlate(voteCount);
 
+*/
 
 // __________________________________________
 // Refactored Solution
 
+function election(votes) {
+  for(var student in votes) { 
+    var votesCast = votes[student];
+    for(var officer in votesCast) { 
+      var officerName = votesCast[officer];
+      if (voteCount[officer][officerName]) {
+        voteCount[officer][officerName] += 1
+      }
+      else {
+        voteCount[officer][officerName] = 1
+      }
+    }
+  }
+}
+election(votes);        
+
+/* Once the votes have been tallied, assign each officer position the name of the
+student who received the most votes. */
+
+function finalSlate(voteCount) {
+  for(var office in voteCount) {
+    var highestTally = 0;
+    var studentName = "";
+    var officePosition = voteCount[office];
+    for(var officerName in officePosition) {
+      var tally = officePosition[officerName];
+      if (tally > highestTally) {
+        highestTally = tally;
+        studentName = officerName;
+      }
+      officers[office] = studentName;
+    }
+  }
+}
+finalSlate(voteCount);
 
 
 
@@ -141,10 +177,22 @@ finalSlate(voteCount);
 // __________________________________________
 // Reflection
 
+/*
+What did you learn about iterating over nested objects in JavaScript?
+We  used a for.. in loop to be able to access the nested objects and iterate over them. 
+This uses the for loop to access the object, then [nested_object] in object to target 
+the nested array/object. We could then create a new variable representing a value of
+that nested object like this:
+var value = [nested_object][key]
 
+Were you able to find useful methods to help you with this?
+We mostly used loops and didn't really use any built in methods.
 
-
-
+What concepts were solidified in the process of working through this challenge?
+I came into this challenge with no understanding of how to acces nested arrays so I
+learned a lot while searching for the solution. I do feel like I have a stronger
+idea of how to manipulate objects in JS now.
+*/
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
