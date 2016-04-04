@@ -111,16 +111,20 @@ function average(array){
 // Reflect
 /*
 What did you learn about adding functions to objects?
-I'm not sure we found the most efficient or best way to do it, but after writing the function we simply added the function with this syntax:
+I'm not sure we found the most efficient or best way to do it, 
+but after writing the function we simply added the function with this syntax:
 object.function = function;
 which allowed us to add the function to the object.
 
 How did you iterate over nested arrays in JavaScript?
 We used a for loop with a counter that represented the array position.
-This allowed us to move through each position on the array, with a cutting off point of array.length.
+This allowed us to move through each position on the array, with a cutting off 
+point of array.length.
 
-Were there any new methods you were able to incorporate? If so, what were they and how did they work?
-We were able to write some simple and efficient code without the use of any methods we had to look up.
+Were there any new methods you were able to incorporate?
+If so, what were they and how did they work?
+We were able to write some simple and efficient code without the use of any 
+methods we had to look up.
 
 
 */
