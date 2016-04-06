@@ -53,6 +53,4 @@ What are you going to study to get more prepared for Phase 1?
 I have a list of practice problems that will help cement my understanding of some 
 basic Ruby methods. I also want to do many of the Ruby Review problems.
 
-
-
 =end
